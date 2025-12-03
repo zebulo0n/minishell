@@ -1,0 +1,59 @@
+ls | grep .c > c_files.txt
+ls > out.txt
+cat < in.txt > out.txt 
+grep hi < file.txt
+cat < a.txt > b.txt >> c.txt
+echo test >> log1.txt >> log2.txt           ===>test is cmd in /bin
+ls | tee list.txt | wc -l > count.txt
+cat < in.txt | grep foo > out.txt
+grep hi < input.txt | wc -l
+cat file.txt | grep error >> errors.log
+ls | sort  
+echo hi | cat
+cat file.txt | grep hello | wc -l
+ls | wc -l
+ls > list.txt
+cat < input.txt > output.txt
+cat < input.txt
+echo Hello >> out.txt
+echo Hello > out.txt
+
+# EDGE CASES
+ls -l -a
+ls | grep src
+cat file | grep foo | sort | uniq
+cat < infile > outfile
+echo hello >> output.txt
+cat << EOF
+cat < infile > outfile >> logfile
+echo "hello world"
+echo "a'b'c"
+echo \"hello\"
+ls    |    grep   a
+cat<in>out
+cat < in.txt | grep foo >> out.txt
+echo "'quoted'"
+echo '"quoted"'
+echo "He said \"hi\"" 
+echo \"hello\"
+echo "a"'b'"c" 
+echo "|"
+echo " a " ' b ' c
+echo "foo" "bar"
+cat < "input file.txt"=====
+echo "foo | bar" | cat 
+echo ">" "<" ">>"
+echo "He said: \"it's fine\""
+
+# ERROR
+|                   ======
+>
+ls || grep test
+ls |
+echo "hello
+echo 'world
+
+# TODO
+> out.txt echo hello
+/bin/ls
+
